@@ -1,0 +1,17 @@
+
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: "jdbc:postgresql://localhost:5433/TaskBoardDB"
+    username: "root_admin"
+    password: "8796"
+    driverClassName: org.postgresql.Driver
+  jpa:
+    database: POSTGRESQL
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+  #ddl-auto: update
